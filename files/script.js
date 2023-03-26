@@ -14,26 +14,26 @@ function calc() {
 
     
     if(outPutUnit === "Hour(s)") {
-        outPutToMilliseconds = (document.querySelector('input').value)*60*60*60;
+        outPutToMilliseconds = (document.querySelector('input').value)*60*60*1000;
     }
     if(outPutUnit === "Minute(s)") {
-        outPutToMilliseconds = (document.querySelector('input').value)*60*60;
+        outPutToMilliseconds = (document.querySelector('input').value)*60*1000;
     }
     if(outPutUnit === "Second(s)") {
-        outPutToMilliseconds = (document.querySelector('input').value)*60;
+        outPutToMilliseconds = (document.querySelector('input').value)*1000;
     }
     if(outPutUnit === "Millisecond(s)") {
         outPutToMilliseconds = (document.querySelector('input').value);
     }
     
     if(outPutUnit2 === "Hour(s)") {
-        result = outPutToMilliseconds/60/60/60
+        result = outPutToMilliseconds/60/60/1000
     }
     if(outPutUnit2 === "Minute(s)") {
-        result = outPutToMilliseconds/60/60
+        result = outPutToMilliseconds/60/1000
     }
     if(outPutUnit2 === "Second(s)") {
-        result = outPutToMilliseconds/60
+        result = outPutToMilliseconds/1000
     }
     if(outPutUnit2 === "Millisecond(s)") {
         result = outPutToMilliseconds
