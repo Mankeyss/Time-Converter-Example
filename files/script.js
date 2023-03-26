@@ -40,7 +40,7 @@ function calc() {
     }
 
     if(result.toString() === "NaN") {
-        alert("Please only use numbers!");
+        document.getElementById("result-display").innerText = "Please only use numbers!";
     } else {
         document.getElementById("result-display").innerText = result + " " + outPutUnit2;
     }
