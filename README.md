@@ -1,2 +1,2 @@
 # Time Converter Example
- An example of a very simple time converter
+ An example of a very simple time converter.
