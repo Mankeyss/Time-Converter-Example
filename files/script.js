@@ -15,7 +15,6 @@ function calc() {
     if(outPutUnit === "Day(s)") {
         outPutToMilliseconds = (document.querySelector('input').value)*60*60*60*1000;
     }
-    
     if(outPutUnit === "Hour(s)") {
         outPutToMilliseconds = (document.querySelector('input').value)*60*60*1000;
     }
