@@ -12,6 +12,9 @@ function calc() {
     var select = document.getElementById("first-unit")
     var outPutUnit = select.options[select.selectedIndex].text
 
+    if(outPutUnit === "Day(s)") {
+        outPutToMilliseconds = (document.querySelector('input').value)*60*60*60*1000;
+    }
     
     if(outPutUnit === "Hour(s)") {
         outPutToMilliseconds = (document.querySelector('input').value)*60*60*1000;
@@ -25,7 +28,10 @@ function calc() {
     if(outPutUnit === "Millisecond(s)") {
         outPutToMilliseconds = (document.querySelector('input').value);
     }
-    
+
+    if(outPutUnit2 === "Day(s)") {
+        result = outPutToMilliseconds/60/60/60/1000
+    }
     if(outPutUnit2 === "Hour(s)") {
         result = outPutToMilliseconds/60/60/1000
     }
